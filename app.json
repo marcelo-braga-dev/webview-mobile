@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "App Name",
+    "slug": "appname",
+    "platforms": [
+      "android"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Este aplicativo precisa acessar a câmera para uploads de fotos.",
+        "NSPhotoLibraryUsageDescription": "Este aplicativo precisa acessar a galeria para uploads de fotos."
+      }
+    },
+    "android": {
+      "package": "br.com.",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "INTERNET"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "config": {
+        "firebase": {
+          "apiKey": "your-firebase-api-key",
+          "authDomain": "your-firebase-auth-domain",
+          "projectId": "your-firebase-project-id",
+          "storageBucket": "your-firebase-storage-bucket",
+          "messagingSenderId": "your-firebase-messaging-sender-id",
+          "appId": "your-firebase-app-id"
+        }
+      }
+    },
+    "extra": {
+      "webviewUrl": "https://"
+    }
+  }
+}
